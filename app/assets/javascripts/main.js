@@ -51,6 +51,8 @@ $(document).ready( function() {
 
 });
 
+// AJAX call to retrieve Movie records
+
 function getMovies() {
 
   $('div#nominated ul').html("");
@@ -96,6 +98,8 @@ function getMovies() {
   });
 };
 
+// Update movie positions.
+
 function addRankings(rankedMovies) {
 
   console.log(rankedMovies);
@@ -112,6 +116,8 @@ function addRankings(rankedMovies) {
 
 }
 
+// AJAX to update actual position of movie
+
 function updateRank(movie_id, rank) {
   $.ajax({
     type: "PUT",
@@ -121,6 +127,8 @@ function updateRank(movie_id, rank) {
 
   console.log("Adding rank to movie");
 }
+
+// AJAX that retrieves movies and formats them for the Ranked Movies list
 
 function updateRanking() {
   var ranked = [];
@@ -139,6 +147,8 @@ function updateRanking() {
 
 }
 
+// AJAX to delete movies from the db
+
 function deleteMovie(movie_id) {
   $.ajax({
     url: '/movies/' + movie_id + ".json" ,
@@ -148,6 +158,8 @@ function deleteMovie(movie_id) {
     }
   });
 }
+
+// AJAX to add movies to the db
 
 function addMovie() {
   $.ajax({
