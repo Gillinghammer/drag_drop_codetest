@@ -1,0 +1,145 @@
+body {
+  margin: 0 auto;
+  font-family: helvetica, sans-serif;
+  color: #333;
+  background-color: #F6E27F;
+
+  input[type="button"] {
+    display: block;
+    margin: 20px 0; 
+    outline: none;
+    &.btn {
+      -webkit-border-radius: 28;
+      -moz-border-radius: 28;
+      border-radius: 28px;
+      border: none;
+      color: #ffffff;
+      font-size: 1em;
+      background: #3498db;
+      padding: 10px 20px 10px 20px;
+      text-decoration: none;
+    }
+
+    &.btn:hover {
+      background: #3cb0fd;
+      background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+      background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+      background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+      background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+      background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+      text-decoration: none;
+    }
+  }
+
+  div#hero {
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    margin-bottom: 25px;
+    min-width: 450px;
+    padding: 25px 50px 0 50px;
+    background-color: #333;
+    color: #999;
+    h1 {
+      max-width: 450px;
+      margin: 0 auto;
+      font-size: 3em;
+      text-align: center;
+    }
+    form {
+      max-width: 450px;
+      margin: 25px auto;
+      padding: 20px 0;
+      label {
+        padding: 0 10px;
+      }
+      input {
+        outline: none;
+        padding: 7px;
+      }
+      textarea {
+        outline: none;
+        padding: 7px;
+        margin: 20px 0 0 0;
+        width: 403px;
+        height: 50px;
+        border: 1px solid #e3e3e3;
+      }
+    }
+  }
+
+  div#lists {
+    padding: 0px 50px;
+    p#intro {
+      margin: 0 auto;
+      padding: 20px;
+      font-size: 1.25em;
+      line-height: 2em;
+      max-width: 450px;
+      span#nom {
+        font-weight: bold;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+
+  #nominated, #ranking {
+    margin: 0 auto;
+    min-width: 300px;
+    max-width: 450px;
+    display: block;
+    padding: 20px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 3em;
+  }
+
+  ol {
+    padding-left: 20px;
+    margin: 0;
+    line-height: 3em;
+    li {
+      color: #3498db;
+    }
+  }
+
+  li {
+    font-size: 1.25em;
+    cursor: pointer;
+    &:hover {
+      font-weight: bold;
+    }
+  }
+
+  .hidden {
+    display:none;
+  }
+
+  div#ranking {
+    position: relative;
+    min-height: 250px;
+    .remove {
+      cursor: pointer;
+      color: red;
+    }
+    input#saveRankings {
+      position: absolute;
+      bottom: 5px;
+      right: 15px;
+    }
+    &.drop-hover {
+      -webkit-box-shadow: 0px 2px 10px 0px rgba(50, 50, 50, 0.5);
+      -moz-box-shadow:    0px 2px 10px 0px rgba(50, 50, 50, 0.5);
+      box-shadow:         0px 2px 10px 0px rgba(50, 50, 50, 0.5);
+    }
+    p {
+      font-weight: bold;
+    }
+  }
+
+}
